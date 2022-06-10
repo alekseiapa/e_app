@@ -25,7 +25,7 @@ export default function Header() {
           <span className="nav__itemLineOne">Your</span>
           <span className="nav__itemLineTwo">Shop</span>
         </div>
-        <div className="nav__item">
+        <div className="nav__itemBasket">
           <ShoppingBasketIcon className="itemBasket" />
           <span className="nav__itemLineTwo nav__basketCount">0</span>
         </div>
