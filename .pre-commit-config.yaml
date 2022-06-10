@@ -1,20 +1,4 @@
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.2.0
-    hooks:
-      - id: trailing-whitespace
-        exclude_types: [sql, json]
-      - id: end-of-file-fixer
-        exclude: '.dashboard$'
-        exclude_types: [sql, json]
-      - id: mixed-line-ending
-        exclude_types: [sql, json]
-        args: [ --fix=lf ]
-      - id: double-quote-string-fixer
-  - repo: https://github.com/ikamensh/flynt/
-    rev: '0.76'
-    hooks:
-      - id: flynt
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v2.6.2
     hooks:
