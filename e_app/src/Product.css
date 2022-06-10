@@ -1,0 +1,75 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot");
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember")
+      format("svg");
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  max-height: 500px;
+  min-width: 100px;
+  background-color: white;
+  z-index: 1;
+}
+
+.product__rating {
+  display: flex;
+}
+
+.product > img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
+  margin: 20px 0 0 15px;
+}
+
+.product > button {
+  background: #ffd72c;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 30px;
+  padding: 5px 50px;
+  border-radius: 20px;
+  border-color: #ffd72c;
+  border-style: solid;
+  outline: 0;
+  z-index: 20;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product > button:hover {
+  background: #d8b312;
+  border-color: #d8b312;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+  font-family: "Amazon Ember", sans-serif;
+  font-weight: 600;
+}
+
+.star__checked {
+  color: #ff9f00;
+}
