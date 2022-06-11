@@ -59,3 +59,7 @@ services:
 volumes:
   app_data:
   node_modules:
+
+networks:
+  traefik_net:
+    external: true
