@@ -1,6 +1,6 @@
 import React from "react";
-import Product from "./Product";
-import { products } from "./sampleData";
+import Product from "../components/Product";
+import { products } from "../resources/sampleData";
 import "./Home.css";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="home">
         <div className="home__container">
           <img
-            src={require("./images/home_img.jpg")}
+            src={require(`../components/images/home_img.jpg`)}
             alt=""
             className="home__image"
           />

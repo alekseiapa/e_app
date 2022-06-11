@@ -26,7 +26,7 @@ export default function Product(props) {
           </>
         </div>
       </div>
-      <img src={require(`${image}`)} alt="product" />
+      <img src={require("" + image)} alt="product" />
       <button>Add to Cart</button>
     </div>
   );
