@@ -1,23 +1,32 @@
 import React from "react";
 import "./Product.css";
 
-export default function Product() {
+export default function Product(props) {
+  const { title, price, rating, image } = props;
+  var starClassNames = [];
+  var baseClassName = "fa fa-star fa-lg";
+  for (let i = 0; i <= 5; i++) {
+    starClassNames.push(baseClassName);
+  }
+  for (let i = 0; i <= rating; i++) {
+    starClassNames[i] += ` star__checked`;
+  }
   return (
     <div className="product">
       <div className="product__info">
-        <p>Apple iPhone 12 Pro, 128GB, Graphite - Unlocked (Renewed Premium)</p>
+        <p>{title}</p>
         <p className="product__price">
-          <strong>$30</strong>
+          <strong>${price}</strong>
         </p>
         <div className="product__rating">
-          <span class="fa fa-star fa-lg	 star__checked"></span>
-          <span class="fa fa-star fa-lg	 star__checked"></span>
-          <span class="fa fa-star fa-lg	 star__checked"></span>
-          <span class="fa fa-star fa-lg	star__checked"></span>
-          <span class="fa fa-star fa-lg	"></span>
+          <>
+            {starClassNames.map((classNm, i) => {
+              return <span key={i} className={classNm}></span>;
+            })}
+          </>
         </div>
       </div>
-      <img src={require("./images/iphone13.jpg")} alt="iphone13" />
+      <img src={require(`${image}`)} alt="product" />
       <button>Add to Cart</button>
     </div>
   );
