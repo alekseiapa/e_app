@@ -2,8 +2,8 @@ FROM node:erbium-alpine3.14 as build
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package.json /app/
-COPY package-lock.json /app/
+COPY e_app/package.json /app/
+COPY e_app/package-lock.json /app/
 WORKDIR /app
 RUN npm ci --silent && npm install react-scripts@3.4.1 -g --silent
 
