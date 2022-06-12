@@ -7,7 +7,7 @@ COPY e_app/package-lock.json /app/
 WORKDIR /app
 RUN npm ci --silent && npm install react-scripts@3.4.1 -g --silent
 
-COPY . /app/
+COPY e_app/ /app/
 
 RUN npm run build
 
